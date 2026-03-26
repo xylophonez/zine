@@ -2,7 +2,11 @@
 
 Simple CLI for uploading files and shipping markdown blog content to Arweave.
 
-## The 2 commands most people need
+If you've got a folder of markdown files, you can turn that into a blog on Arweave.
+
+zine uploads text and images from a local folder and builds the list into a manifest.json. Point your blog at that manifest.json, and crawl through the txids/metadata,  
+
+## The only 2 commands you'll probably need
 
 ```bash
 zine upload <path>
@@ -110,13 +114,3 @@ zine build
 
 - `zine validate` checks content frontmatter and slugs.
 - `zine build` writes/updates local manifest without uploading.
-
-## Notes on distribution
-
-For GitHub + npm distribution, this repo is already set up with a `bin` entry in `package.json`:
-
-- `bin/zine.js` is the executable.
-- Users can run with `npm link` locally.
-- Publish with `npm publish` when ready.
-
-If the package name `zine-cli` is taken, rename `name` in `package.json` (for example to your org scope: `@your-org/zine`).
