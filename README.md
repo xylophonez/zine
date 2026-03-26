@@ -4,7 +4,7 @@ Simple CLI for uploading files and shipping markdown blog content to Arweave.
 
 If you've got a folder of markdown files, you can turn that into a blog on Arweave.
 
-zine uploads text and images from a local folder and builds the list into a manifest.json. Point your blog at that manifest.json, and crawl through the txids/metadata,  
+zine uploads text and images from a local folder and builds the list into a manifest.json. Point your blog at that manifest.json, crawl through the txids/metadata, and populate your blog UI from the permaweb.  
 
 ## The only 2 commands you'll probably need
 
