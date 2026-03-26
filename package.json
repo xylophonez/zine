@@ -1,0 +1,28 @@
+{
+  "name": "zine-cli",
+  "version": "0.1.0",
+  "description": "Simple markdown publishing and uploads to Arweave",
+  "type": "module",
+  "bin": {
+    "zine": "bin/zine.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test:smoke": "node ./bin/zine.js --help"
+  },
+  "keywords": [
+    "arweave",
+    "cli",
+    "publishing",
+    "blog"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "arbundles": "^0.11.2"
+  }
+}
